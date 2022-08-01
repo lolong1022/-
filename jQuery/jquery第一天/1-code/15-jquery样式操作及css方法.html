@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div>12312</div>
+    <span></span>
+
+    <script src="jquery.min.js"></script>
+    <script>
+    // css方法
+    // 1.css('属性') 返回对应属性的属性值 取值
+     console.log($('div').css('backgroundColor','blue'));
+
+    // 2.css('属性', '属性值') 设置一组样式
+    // 属性必须加引号 值如果是数字类型的话，我们可以去掉引号和单位
+
+
+    // 3.css({配置对象})  参数是对象形式 批量设置
+    $('div').css({
+        width:400,
+        height:400,
+        backgroundColor:'green',
+        borderRadius:100
+    })
+      
+    </script>
+</body>
+
+</html>

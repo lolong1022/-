@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div>
+      <span>我是内容</span>
+    </div>
+    <input type="text" value="请输入内容" />
+
+    <script src="jquery.min.js"></script>
+    <script>
+      var num = 0;
+      setInterval(function () {
+        $("div").html("过了" + num + "秒");
+        num++;
+        if(num==10) {
+            $('input').val('10秒了')
+        }
+      }, 1000);
+      console.log($("div").html("1111"));
+    </script>
+  </body>
+</html>

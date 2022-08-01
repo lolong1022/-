@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style></style>
+  </head>
+
+  <body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+
+    <script src="jquery.min.js"></script>
+    <script>
+      // var num = 0
+      // $('div').each(function(i, element) {
+      //     num+=+($(element).html())
+      // })
+      // console.log(num);
+      // var arr= ['blur', 'red','green','yellow','orange']
+      // var newArray = [];
+      //         $.each(arr,function(i, element) {
+      //             newArray.push(element+'--'+i)
+      //         })
+      //         console.log(newArray);
+      $.each(
+        {
+          name: "showed",
+          age: 17,
+          sex: "男",
+        },
+        function (key, v) {
+          console.log(key, v);
+        }
+      );
+    </script>
+  </body>
+</html>

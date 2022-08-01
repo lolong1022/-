@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            background-color: pink;
+            margin: 100px auto;
+            transition: all 1s;
+        }
+        
+        .current {
+            background-color: red;
+            transform: rotate(36000deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="current"></div>
+
+    <script src="jquery.min.js"></script>
+    <script>
+    //类 相关的操作 addClass removeClass toggleClass hasClass 
+    // addClass
+        $("div").addClass('one').addClass('two').addClass('three');
+    
+    // removeClass
+        $('div').removeClass('current')
+    
+
+    // toggleClass 
+    $('div').click(function() {
+
+        $(this).toggleClass('current')
+    })
+
+    
+    // hasClass
+
+    </script>
+</body>
+
+</html>

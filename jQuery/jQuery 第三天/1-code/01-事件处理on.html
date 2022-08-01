@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        
+        .current {
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <ul>
+        <li>我们都是好孩子</li>
+        <li>我们都是好孩子</li>
+        <li>我们都是好孩子</li>
+        <li>我们都是好孩子</li>
+        <li>我们都是好孩子</li>
+    </ul>
+    <ol>
+
+    </ol>
+    <button>点击</button>
+
+    <script src="jquery.min.js"></script>
+    <script>
+        // $('div').on({
+        //     click:function() {
+        //         $(this).css('background','red')
+        //     },
+        //     mouseenter:function() {
+        //         $(this).css('background','blue')
+        //     },
+        //     mouseleave:function() {
+        //         $(this).css('background','yellow')
+        //     }
+        // })
+        // $('div').on('mouseenter mouseleave',function (){
+        //     $(this).toggleClass('current')
+        // })
+        var li = $('<li>我是谁</li>')
+            $('ul').append(li)
+        $('ul').on('click','li',function(){
+            console.log($(this).html());
+        })
+
+    </script>
+</body>
+
+</html>

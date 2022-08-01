@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .a {
+        color: blue;
+        font-size: 50px;
+        margin: 0 500px;
+        display: block;
+      }
+      ul li {
+        height: 50px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <button>按钮1</button>
+    <button>按钮2</button>
+    <button>按钮3</button>
+
+    <div class="a">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+    </div>
+    <script>
+      var btns = document.querySelectorAll("button");
+      var a = document.querySelector(".a");
+      var ul = document.querySelector("ul");
+      btns[1].addEventListener("click", function (e) {
+        // console.log(e.target);
+        console.log(this);
+      });
+      ul.addEventListener("click", function (e) {
+        // console.log(this);
+        for(var i =0;i<=1;i++) {
+            e.target.backgroundColor='transparent';
+        }
+        e.target.style.backgroundColor ='pink';
+        
+        // alert('ul')
+        // e.stopPropagation()
+      });
+      a.addEventListener("click", function (e) {
+        // console.log(this);
+        console.log(e.target);
+        // alert('a')
+      });
+
+    </script>
+  </body>
+</html>

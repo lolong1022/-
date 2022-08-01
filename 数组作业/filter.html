@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 要求1：使用for循环封装还原filter函数
+      // 要求2：该函数由数组调用，接收一个方法
+      // 提示：可以把该方法挂载到Array.prototype数组的原型上
+
+      // const ret = [1, 2, 3, 4].filter(i => {
+      //   return i % 2 === 0
+      // })
+      // console.log(ret)
+
+      Array.prototype.harryfilter = function (fn) {
+        const newArr = []
+        for (let i = 0; i < this.length; i++) {
+          if (fn(this[i], i, this)) {
+            newArr.push(this[i])
+          }
+        }
+
+        return newArr
+      }
+
+      const arr = [1, 2, 3, 4]
+
+      const newArr = arr.harryfilter(function (item, index, arr) {
+        console.log(index)
+        return item % 2 === 0
+      })
+
+      console.log(newArr)
+    </script>
+  </body>
+</html>

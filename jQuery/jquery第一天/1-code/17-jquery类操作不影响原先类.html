@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .one {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            transition: all .3s;
+        }
+        
+        .two {
+            transform: rotate(45deg);
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="one two"></div>
+
+    <script src="jquery.min.js"></script>
+    <script>
+        // className 和 类操作的区别
+        var one = document.querySelector('.one')
+
+
+        // $('div').addClass('two') // 类似于数组push
+        
+        
+        // jQuery 里面类操作只是对指定类进行操作，不影响原先的类名
+    </script>
+</body>
+
+</html>

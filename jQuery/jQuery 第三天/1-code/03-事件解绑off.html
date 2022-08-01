@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <ul>
+        <li>我们都是好孩子</li>
+        <li>我们都是好孩子</li>
+        <span>qwe</span>
+        <span>qwe</span>
+    </ul>
+    <p>我是屁</p>
+
+    <script src="jquery.min.js"></script>
+    <script>
+        $('div').on({
+            click:function(){
+                console.log('点击了');
+            },
+            mouseover :function(){
+                console.log('经过了');
+            }
+        })
+        $('div').off('click')
+        $('ul').on('click','li',function() {
+          console.log(  $(this).html());
+        })
+$('ul').off('click','li')
+    </script>
+</body>
+
+</html>

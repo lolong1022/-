@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var as = {
+            labels: 'a',
+            label :'b',
+        }
+        var aa = {
+
+        }
+        for(var k in as) {
+            console.log(k);
+            if (k) {
+                as.s=as.label
+                delete as.label
+            }
+            console.log(as);
+        }
+        var vv= Object.keys(as)
+        console.log(vv);
+        // console.log(vv[0]);
+        var bb = vv[0]
+        console.log(as[vv[0]]);
+        // console.log(as[bb]==as.labels);
+    
+
+    </script>
+</body>
+</html>

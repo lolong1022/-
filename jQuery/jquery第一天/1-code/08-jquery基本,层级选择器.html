@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>我是div</div>
+    <div class="nav">我是nav div</div>
+    <p id="pp">我是p</p>
+    <ol>
+        <li>我是ol 的</li>
+        <li>我是ol 的</li>
+        <li>我是ol 的</li>
+        <li>我是ol 的</li>
+    </ol>
+    <ul>
+        <li>我是ul 的</li>
+        <li>我是ul 的</li>
+        <li>我是ul 的</li>
+        <li>我是ul 的</li>
+    </ul>
+
+    <script src="./jquery.min.js"></script>
+    <script>
+        // 基本(id,类，标签，并集，交集)，
+        
+        $('#pp').css('background-color', 'red')
+        $('div.nav').css('background-color', 'red')
+       var div =  $('ol li').css('background-color', 'green')
+       console.log(div);
+    //    console.log(div[0]);
+     
+        // 层级选择器 子代 后代
+        
+
+    </script>
+</body>
+
+</html>

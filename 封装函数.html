@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+       
+    <meta charset="UTF-8" />
+       
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+       
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       
+    <title>Document</title>
+  </head>
+
+  <body>
+       
+    <div class="box">城北</div>
+       
+    <div class="box">城北</div>
+       
+    <div class="box">城北</div>
+       
+    <div class="box">城北</div>
+       
+    <div id="box1">辛虞</div>
+       
+    <script>
+      // 1、getElementsByClassName根据类名获取元素集合
+      var res = document.getElementsByClassName("box");
+      console.log(res);
+      for (var i = 0; i < res.length; i++) {
+        console.log(res[i]);
+      } //2、querySelector返回指定选择器的第一个元素对象，H5新增的方法，只能兼容I9以上版本
+      var res1 = document.querySelector(".box");
+      console.log(res1);
+    </script>
+  </body>
+</html>

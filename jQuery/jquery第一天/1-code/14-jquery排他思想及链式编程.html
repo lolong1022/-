@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <button>快速</button>
+    <button>快速</button>
+    <button>快速</button>
+    <button>快速</button>
+    <button>快速</button>
+    <button>快速</button>
+    <button>快速</button>
+
+
+    <script src="jquery.min.js"></script>
+    <script>
+      $('button').click(function(){
+        $(this).css('backgroundColor','red').siblings('button').css('backgroundColor','')
+        // $(this)
+        console.log( $(this).css('backgroundColor','red'));
+      })
+    </script>
+</body>
+</html>
